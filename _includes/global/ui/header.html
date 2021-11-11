@@ -1,0 +1,23 @@
+<header class="">
+  <nav class="flex max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 border-b py-24 md:py-6">
+    <div class="w-1/4 hidden md:flex">
+      <a href="/"><span>nathaniel fostan</span></a>
+    </div>
+    <div class="w-full md:w-1/2">
+      <ul class="flex justify-between">
+        <li>
+          <a href="/" class="{% if page.url == "{{site.url}}" %}active {% endif %}">all</a>
+        </li>
+        <li>
+          <a href="/thoughts.html/" class="{% if page.url contains "/thoughts" %}active {% endif %}">thoughts</a>
+        </li>
+        <li>
+          <a href="/portfolio.html/">portfolio</a>
+        </li>
+        <li>
+          <a href="/dev.html/">dev</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

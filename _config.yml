@@ -1,0 +1,23 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: nathaniel fostan
+email: nathanielfostan@gmail.com
+description: Thoughts & opinions on design, development, and web3
+permalink: pretty
+url: "http://nathanielfostan.com"
+twitter_username: nathanielfostan
+github_username:  nathanielfostan
+
+# Development Utilities
+placeholder_image: https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder
+
+
+# Build settings
+collections:
+
+plugins:
+  - jekyll-feed

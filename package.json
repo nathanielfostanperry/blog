@@ -1,0 +1,22 @@
+{
+  "name": "nathaniel-fostan",
+  "version": "1.0.0",
+  "description": "Thoughts & opinions on design, development, and web3",
+  "main": "index.js",
+  "scripts": {
+    "dev": "'npm:watch-css'",
+    "production": "NODE_ENV=production postcss ./src/styles.css -o ./public/main.css",
+    "watch-css": "postcss ./src/styles.css -o ./public/main.css --watch",
+    "watch": "browser-sync start --server --files './src/*.css'"
+  },
+  "keywords": [],
+  "author": "nathaniel fostan",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "browser-sync": "^2.27.7",
+    "postcss-cli": "^9.0.2",
+    "tailwindcss": "^2.2.19"
+  }
+}
