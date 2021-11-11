@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include global/head.html %}
-<body class="{{ page.layout }}">
+<body class="{{ page.layout }} bg-tan-100">
   {% include global/ui/header.html %}
   <main id="pageContent" class="flex max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 border-b py-24 md:py-6">
-    <div class="aside w-1/4">
+    <aside class="w-1/4 py-8">
       {% include components/blog-posts.html %}
-    </div>
-    <div class="w-1/2">
+    </aside>
+    <div class="w-1/2 py-8">
     {{ content }}
     </div>
 

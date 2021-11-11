@@ -4,7 +4,11 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['Fira Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      }
+    },
     colors: {
       transparent: 'transparent',
       black: '#000',
@@ -28,6 +32,7 @@ module.exports = {
       red: '#B74429',
       blue: '#294FB7',
     },
+
   },
   variants: {
     extend: {},

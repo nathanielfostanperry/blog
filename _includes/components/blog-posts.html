@@ -1,4 +1,7 @@
 {% for post in site.posts %}
 <!-- the logic for wwhat is displayed here could be deterimined by url & tags within the posts -->
-{{ post.title }}
+<a href="{{ post.url }}">
+  {{ post.title }}
+</a>
+
 {% endfor %}
