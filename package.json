@@ -4,15 +4,19 @@
   "description": "Thoughts & opinions on design, development, and web3",
   "main": "index.js",
   "scripts": {
-    "dev": "'npm:watch-css'",
-    "production": "NODE_ENV=production postcss ./styles/development/main.css -o ./styles/production/styles.css",
-    "watch-css": "postcss ./styles/development/main.css -o ./styles/production/styles.css",
-    "watch": "browser-sync start --server --files './src/*.css'"
+    "jekyll:dev": "bundle exec jekyll serve --incremental --watch",
+    "jekyll:build": "JEKYLL_ENV=production bundle exec jekyll build",
+    "css:dev": "postcss ./styles/development/main.css --output ./styles/production/styles.css --watch",
+    "css:build": "NODE_ENV=production postcss ./styles/development/main.css --output ./styles/production/styles.css",
+    "dev": "concurrently --kill-others \"npm run jekyll:dev\" \"npm run css:dev\"",
+    "build": "npm run css:build && npm run jekyll:build"
   },
   "keywords": [],
   "author": "nathaniel fostan",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "concurrently": "^6.3.0"
+  },
   "dependencies": {
     "autoprefixer": "^10.4.0",
     "browser-sync": "^2.27.7",

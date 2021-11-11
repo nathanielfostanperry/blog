@@ -1,8 +1,9 @@
-# blog
+<h1 align="center">
+  nathaniel fostan
+</h1>
 
+```shell
 1. npm install
-2. bundle exec jekyll serve
-
-
-
-
+2. npm run dev
+3. npm run build
+```
