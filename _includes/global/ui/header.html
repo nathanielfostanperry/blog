@@ -6,10 +6,10 @@
     <div class="w-full md:w-1/2">
       <ul class="flex justify-between">
         <li>
-          <a href="/" class="{% if page.url == "{{site.url}}" %}active {% endif %}">all</a>
+          <a href="/" class="{% if page.url == "{{ site.url }}" %}active {% endif %}">all</a>
         </li>
         <li>
-          <a href="/thoughts.html/" class="{% if page.url contains "/thoughts" %}active {% endif %}">thoughts</a>
+          <a href="/thoughts/" class="{% if page.url contains "/thoughts" %}active {% endif %}">thoughts</a>
         </li>
         <li>
           <a href="/portfolio.html/">portfolio</a>
