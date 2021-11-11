@@ -18,6 +18,8 @@ placeholder_image: https://via.placeholder.com/1000x1000/333333/000000?text=Plac
 
 # Build settings
 collections:
+  announcements:
+    output: true
 
 plugins:
   - jekyll-feed
