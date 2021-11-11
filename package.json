@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "'npm:watch-css'",
-    "production": "NODE_ENV=production postcss ./src/styles.css -o ./public/main.css",
-    "watch-css": "postcss ./src/styles.css -o ./public/main.css --watch",
+    "production": "NODE_ENV=production postcss ./styles/development/main.css -o ./styles/production/styles.css",
+    "watch-css": "postcss ./styles/development/main.css -o ./styles/production/styles.css",
     "watch": "browser-sync start --server --files './src/*.css'"
   },
   "keywords": [],
