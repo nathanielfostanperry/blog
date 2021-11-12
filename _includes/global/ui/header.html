@@ -1,10 +1,10 @@
-<header class="">
-  <nav class="flex max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 py-6 border-b border-tan-200">
+<header class="hidden md:flex">
+  <nav class="flex w-full max-w-screen-2xl mx-auto px-8 sm:px-6 lg:px-8 2xl:px-0 py-4 lg:py-6 border-b border-tan-200">
     <div class="w-1/4 hidden md:flex">
-      <a href="/" class="font-semibold text-2xl text-green-800">@nathanielfostan</a>
+      <a href="/" class="font-semibold text-xl lg:text-2xl text-tan-300">@nathanielfostan</a>
     </div>
     <div class="w-full md:w-3/4 xl:w-1/2">
-      <ul class="flex justify-between">
+      <ul class="flex justify-around lg:justify-between">
         <li>
           <a href="/" class="nav-link{% if page.url == "/" %} active{% endif %}">info</a>
         </li>
@@ -23,6 +23,18 @@
 </header>
 
 <!-- mobile menu -->
-<!-- <header class="fixed w-full bottom-0">
-
-</header> -->
+<header class="fixed w-full bottom-0 md:hidden">
+  <nav class="bg-tan-200">
+    <ul class="flex w-full justify-around">
+      <li>
+        <a class="nav-link" href="">@</a>
+      </li>
+      <li>
+        <a class="nav-link" href="">@</a>
+      </li>
+      <li>
+        <a class="nav-link" href="">@</a>
+      </li>
+    </ul>
+  </nav>
+</header>

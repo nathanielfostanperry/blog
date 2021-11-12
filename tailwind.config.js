@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Fira Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-      }
+      },
+
     },
     colors: {
       transparent: 'transparent',
@@ -22,6 +23,9 @@ module.exports = {
       tan: {
        100: '#f1efed',
        200: '#E0DBD6',
+       300: '#cec7c1',
+       400: '#a7a09a',
+       500: '#908984',
       },
       green: {
        100: '#edf1f0',
