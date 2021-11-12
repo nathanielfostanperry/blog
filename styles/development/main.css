@@ -4,3 +4,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components{
+  .nav-link{
+    @apply font-semibold text-2xl text-gray-400 transition hover:text-green-800 focus:text-green-800 active:text-green-900;
+  }
+}
