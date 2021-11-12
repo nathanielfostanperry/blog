@@ -8,12 +8,12 @@
 
 @layer components{
   .nav-link{
-    @apply font-semibold text-2xl text-gray-400 transition hover:text-green-800 focus:text-green-800 active:text-green-900;
+    @apply font-semibold text-2xl text-gray-400 transition hover:text-green-800 focus:text-green-800 active:text-green-900 px-8 py-6;
   }
   .nav-link{
     @apply font-semibold text-2xl text-gray-400 transition;
   }
   .nav-link.active{
-    @apply text-green-800;
+    @apply text-green-800 border-b-4;
   }
 }

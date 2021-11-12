@@ -611,6 +611,10 @@ video {
 }
 
 .nav-link{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
@@ -655,6 +659,7 @@ video {
 }
 
 .nav-link.active{
+  border-bottom-width: 4px;
   --tw-text-opacity: 1;
   color: rgba(38, 69, 55, var(--tw-text-opacity));
 }
