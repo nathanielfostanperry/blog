@@ -10,4 +10,10 @@
   .nav-link{
     @apply font-semibold text-2xl text-gray-400 transition hover:text-green-800 focus:text-green-800 active:text-green-900;
   }
+  .nav-link{
+    @apply font-semibold text-2xl text-gray-400 transition;
+  }
+  .nav-link.active{
+    @apply text-green-800;
+  }
 }

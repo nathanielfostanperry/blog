@@ -1,21 +1,21 @@
 <header class="">
-  <nav class="flex max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 py-24 md:py-6 border-b border-tan-200">
+  <nav class="flex max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 py-6 border-b border-tan-200">
     <div class="w-1/4 hidden md:flex">
       <a href="/" class="font-semibold text-2xl text-green-800">nathaniel fostan</a>
     </div>
-    <div class="w-full md:w-1/2">
+    <div class="w-full md:w-3/4 xl:w-1/2">
       <ul class="flex justify-between">
-        <li>
-          <a href="/" class="nav-link{% if page.url == "{{ site.url }}" %} active{% endif %}">all</a>
-        </li>
         <li>
           <a href="/thoughts/" class="nav-link{% if page.url contains "/thoughts/" %} active{% endif %}">thoughts</a>
         </li>
         <li>
-          <a href="/portfolio/" class="nav-link{% if page.url contains "/thoughts/" %} active{% endif %}">portfolio</a>
+          <a href="/portfolio/" class="nav-link{% if page.url contains "/portfolio/" %} active{% endif %}">portfolio</a>
         </li>
         <li>
-          <a href="/dev/" class="nav-link{% if page.url contains "/thoughts/" %} active{% endif %}">dev</a>
+          <a href="/dev/" class="nav-link{% if page.url contains "/dev/" %} active{% endif %}">dev</a>
+        </li>
+        <li>
+          <a href="/contact/" class="nav-link{% if page.url contains "/contact/" %} active{% endif %}">contact</a>
         </li>
       </ul>
     </div>

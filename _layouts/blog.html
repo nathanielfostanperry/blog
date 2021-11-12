@@ -1,4 +1,9 @@
 ---
 layout: default
 ---
-{{ content }}
+<aside class="lg:w-1/4 py-8">
+  {% include components/blog-posts.html %}
+</aside>
+<div class="w-11/12 lg:w-1/2 py-8">
+  {{ content }}
+</div>

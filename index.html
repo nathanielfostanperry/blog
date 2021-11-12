@@ -1,6 +1,16 @@
 ---
-layout: blog
+layout: home
+title: nathaniel fostan
+bookmarks:
+  - link: https://example.com/
+    title: example.com
+    image:
 ---
+<section>
+  {% for bookmark in page.bookmarks %}
+    <a href="{{ bookmark.link }}">{{ bookmark.title }}</a>
+  {% endfor %}
+</section>
 <section class="h-screen">
-  <h1 class="text-green-800 text-5xl font-bold">hello</h1>
+  <h1 class="text-green-800 text-5xl font-bold">{{ page.title }}</h1>
 </section>
